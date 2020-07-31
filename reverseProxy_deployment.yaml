@@ -8,7 +8,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: reverseproxy
+      app: reverseProxy
   template:
     metadata:
       labels:
