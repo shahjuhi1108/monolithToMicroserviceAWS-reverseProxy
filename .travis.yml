@@ -16,7 +16,7 @@ before_script:
 script:
   - docker --version # print the version for logging
   - docker build -t udagram-reverseProxy-image1 .
-  - docker tag udagram-feed-api-image1 shahjuhi1108/udagram-reverseProxy-image1:latest
+  - docker tag udagram-reverseProxy-image1 shahjuhi1108/udagram-reverseProxy-image1:latest
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
